@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ParentViewController.swift
 //  ParentChildDataPassing
 //
 //  Created by Russell Gordon on 2020-06-03.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ParentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
