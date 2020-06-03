@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="Add a new favourite"/>
                                 <connections>
-                                    <segue destination="hgz-Tu-j1L" kind="show" id="eoo-jd-ysF"/>
+                                    <segue destination="hgz-Tu-j1L" kind="show" identifier="AddNewFavouriteBook" id="eoo-jd-ysF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-cI-b77">
@@ -95,16 +95,24 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xw-Rt-COb">
-                                <rect key="frame" x="20" y="324" width="232" height="36"/>
+                                <rect key="frame" x="20" y="322" width="232" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="Add this as a new favourite"/>
+                                <connections>
+                                    <action selector="saveNewFavouriteBook:" destination="hgz-Tu-j1L" eventType="touchUpInside" id="N7U-j7-u7O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Fgr-Z6-EQR"/>
                     </view>
                     <navigationItem key="navigationItem" id="tLc-sC-2VJ"/>
+                    <connections>
+                        <outlet property="bookAuthor" destination="MS2-MU-kFL" id="4fj-aB-tq5"/>
+                        <outlet property="bookPageCount" destination="hXF-5t-2og" id="Wu2-q0-eHB"/>
+                        <outlet property="bookTitle" destination="mo6-hA-HaW" id="bI3-jW-FKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Web-Uo-6Ni" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,11 +22,28 @@ class ParentViewController: UIViewController, BookSaver {
         // Do any additional setup after loading the view.
     }
     
+    // When a segue is about to happen, this function will be called
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // AddNewFavouriteBook
+        
+        // What is the destination of this segue?
+        if let childController = segue.destination as? ChildViewControllerAddNewBook {
+
+            // Register this controller, the parent, as something that can save books
+            childController.delegate = self
+            
+        }
+        
+    }
+    
     // By defining this function, the ParentViewController class now conforms to the BookSaver protocol
     func save(new: Book) {
         
         // Add the provided book to the array of favourite books
         favouriteBooks.append(new)
+        
+        // DEBUG: Report how many books there are now in the array of favourite books
+        print("There are now \(favouriteBooks.count) favourite books defined.")
     }
 
 }
