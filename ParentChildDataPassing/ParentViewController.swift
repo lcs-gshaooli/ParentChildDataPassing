@@ -39,8 +39,13 @@ class ParentViewController: UIViewController, BookSaver {
             for book in favouriteBooks {
                 totalPagesAcrossAllBooks += book.pageCount
             }
-            let averagePageCount = totalPagesAcrossAllBooks / favouriteBooks.count
-
+            
+            // Protect against division by zero
+            var averagePageCount = 0
+            if favouriteBooks.count > 0 {
+                averagePageCount = totalPagesAcrossAllBooks / favouriteBooks.count
+            }
+            
             // Pass information about book statistics forward to the child view
             childController.averagePageCount = averagePageCount
             childController.totalBooks = favouriteBooks.count
