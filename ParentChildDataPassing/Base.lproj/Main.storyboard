@@ -36,6 +36,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <state key="normal" title="See statistics"/>
+                                <connections>
+                                    <segue destination="r3K-WW-dDk" kind="show" identifier="ShowBookStatistics" id="2fU-v5-9OK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -135,6 +138,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MW1-Ew-hKs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jf5-Mb-ek8">
+            <objects>
+                <viewController id="r3K-WW-dDk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYR-uU-rWE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDu-5w-002">
+                                <rect key="frame" x="16" y="88" width="343" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate a leo a rutrum. Maecenas quis ante et diam euismod dignissim. Nullam velit lorem, commodo ac mattis ut, facilisis et nibh. Praesent tincidunt non nibh sit amet mollis. Praesent bibendum ullamcorper lectus id rhoncus. Nam auctor tempus elit. Curabitur imperdiet gravida scelerisque. Aliquam lectus leo, mollis et nunc eget, cursus lobortis odio.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="04v-Ok-yb8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pg6-Nm-ALN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jo8-oi-8X9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="597.78325123152717"/>
         </scene>
     </scenes>
 </document>
