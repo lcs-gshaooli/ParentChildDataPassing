@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Child View Controllers Show Book Statistics-->
         <scene sceneID="jf5-Mb-ek8">
             <objects>
-                <viewController id="r3K-WW-dDk" sceneMemberID="viewController">
+                <viewController id="r3K-WW-dDk" customClass="ChildViewControllersShowBookStatistics" customModule="ParentChildDataPassing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYR-uU-rWE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +160,9 @@
                         <viewLayoutGuide key="safeArea" id="04v-Ok-yb8"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pg6-Nm-ALN"/>
+                    <connections>
+                        <outlet property="bookStatistics" destination="tDu-5w-002" id="AK8-E2-Hmt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jo8-oi-8X9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

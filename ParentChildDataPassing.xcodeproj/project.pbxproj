@@ -16,6 +16,7 @@
 		8144526424882C0500DD3A53 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144526324882C0500DD3A53 /* Book.swift */; };
 		8144526624882F3A00DD3A53 /* BookSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144526524882F3A00DD3A53 /* BookSaver.swift */; };
 		81445268248830CD00DD3A53 /* ChildViewControllerAddNewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81445267248830CD00DD3A53 /* ChildViewControllerAddNewBook.swift */; };
+		8144528A24883CD300DD3A53 /* ChildViewControllerShowBookStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144528924883CD300DD3A53 /* ChildViewControllerShowBookStatistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8144526324882C0500DD3A53 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		8144526524882F3A00DD3A53 /* BookSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSaver.swift; sourceTree = "<group>"; };
 		81445267248830CD00DD3A53 /* ChildViewControllerAddNewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllerAddNewBook.swift; sourceTree = "<group>"; };
+		8144528924883CD300DD3A53 /* ChildViewControllerShowBookStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllerShowBookStatistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				8144526324882C0500DD3A53 /* Book.swift */,
 				8144526524882F3A00DD3A53 /* BookSaver.swift */,
 				81445267248830CD00DD3A53 /* ChildViewControllerAddNewBook.swift */,
+				8144528924883CD300DD3A53 /* ChildViewControllerShowBookStatistics.swift */,
 			);
 			path = ParentChildDataPassing;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				8144525424882B2300DD3A53 /* ParentViewController.swift in Sources */,
 				8144525024882B2300DD3A53 /* AppDelegate.swift in Sources */,
 				8144525224882B2300DD3A53 /* SceneDelegate.swift in Sources */,
+				8144528A24883CD300DD3A53 /* ChildViewControllerShowBookStatistics.swift in Sources */,
 				8144526624882F3A00DD3A53 /* BookSaver.swift in Sources */,
 				81445268248830CD00DD3A53 /* ChildViewControllerAddNewBook.swift in Sources */,
 			);

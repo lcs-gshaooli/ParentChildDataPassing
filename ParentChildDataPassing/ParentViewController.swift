@@ -24,7 +24,6 @@ class ParentViewController: UIViewController, BookSaver {
     
     // When a segue is about to happen, this function will be called
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // AddNewFavouriteBook
         
         // What is the destination of this segue?
         if let childController = segue.destination as? ChildViewControllerAddNewBook {
@@ -33,6 +32,21 @@ class ParentViewController: UIViewController, BookSaver {
             childController.delegate = self
             
         }
+        if let childController = segue.destination as? ChildViewControllersShowBookStatistics {
+
+            // Calculate statistics about all books
+            var totalPagesAcrossAllBooks = 0
+            for book in favouriteBooks {
+                totalPagesAcrossAllBooks += book.pageCount
+            }
+            let averagePageCount = totalPagesAcrossAllBooks / favouriteBooks.count
+
+            // Pass information about book statistics forward to the child view
+            childController.averagePageCount = averagePageCount
+            childController.totalBooks = favouriteBooks.count
+            
+        }
+
         
     }
     
